@@ -77,7 +77,7 @@ class _MarketDataScreenState extends State<MarketDataScreen> {
                 children: [
                   Expanded(
                     child: DropdownButtonFormField<SortOption>(
-                      value: provider.sortOption,
+                      initialValue: provider.sortOption,
                       decoration: const InputDecoration(
                         labelText: 'Sort by',
                         border: OutlineInputBorder(),

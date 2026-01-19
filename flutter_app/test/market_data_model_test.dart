@@ -26,7 +26,7 @@ void main() {
     SharedPreferences.setMockInitialValues({});
     final cache = MarketDataCache();
     final items = [
-      MarketData(
+      const MarketData(
         symbol: 'ETH/USD',
         price: 2000,
         change24h: -10,
