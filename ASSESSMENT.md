@@ -26,41 +26,41 @@ These are the core requirements that must be implemented for the assessment to b
 
 #### 1. API Integration 
 
-- [ ] Complete `getMarketData()` method in `lib/services/api_service.dart`
-- [ ] Call `GET /api/market-data` endpoint
-- [ ] Return parsed JSON data
-- [ ] Basic error handling (catch exceptions)
+- [x] Complete `getMarketData()` method in `lib/services/api_service.dart`
+- [x] Call `GET /api/market-data` endpoint
+- [x] Return parsed JSON data
+- [x] Basic error handling (catch exceptions)
 
 #### 2. Data Model 
 
-- [ ] Implement `MarketData` class in `lib/models/market_data_model.dart`
-- [ ] Include required fields: symbol, price, change24h, changePercent24h
-- [ ] Add `fromJson` factory constructor
+- [x] Implement `MarketData` class in `lib/models/market_data_model.dart`
+- [x] Include required fields: symbol, price, change24h, changePercent24h
+- [x] Add `fromJson` factory constructor
 - [ ] Ensure proper null safety
 
 #### 3. State Management 
 
-- [ ] Complete `lib/providers/market_data_provider.dart`
-- [ ] Add `loadMarketData()` method that calls the API service
-- [ ] Manage loading state (`_isLoading`)
-- [ ] Manage data state (`_marketData`)
-- [ ] Use `notifyListeners()` to update UI
+- [x] Complete `lib/providers/market_data_provider.dart`
+- [x] Add `loadMarketData()` method that calls the API service
+- [x] Manage loading state (`_isLoading`)
+- [x] Manage data state (`_marketData`)
+- [x] Use `notifyListeners()` to update UI
 
 #### 4. UI Screen 
 
-- [ ] Create `lib/screens/market_data_screen.dart`
-- [ ] Display list of crypto symbols using `ListView` or `ListView.builder`
-- [ ] Show symbol and price for each item
-- [ ] Show 24h change with color coding (green for positive, red for negative)
-- [ ] Display loading indicator while `isLoading` is true
-- [ ] Display error message when error occurs
+- [x] Create `lib/screens/market_data_screen.dart`
+- [x] Display list of crypto symbols using `ListView` or `ListView.builder`
+- [x] Show symbol and price for each item
+- [x] Show 24h change with color coding (green for positive, red for negative)
+- [x] Display loading indicator while `isLoading` is true
+- [x] Display error message when error occurs
 
 #### 5. Code Quality
 
-- [ ] Write clean, readable code
-- [ ] Follow Flutter/Dart best practices
-- [ ] Ensure proper null safety
-- [ ] Code compiles and runs without errors
+- [x] Write clean, readable code
+- [x] Follow Flutter/Dart best practices
+- [x] Ensure proper null safety
+- [x] Code compiles and runs without errors
 
 ---
 
@@ -70,37 +70,37 @@ These are enhancements that demonstrate advanced skills but are not required for
 
 #### UI/UX Enhancements
 
-- [ ] Implement pull-to-refresh functionality
-- [ ] Format prices as currency (e.g., $43,250.50)
-- [ ] Format percentages with + or - sign (e.g., +2.5%)
+- [x] Implement pull-to-refresh functionality
+- [x] Format prices as currency (e.g., $43,250.50)
+- [x] Format percentages with + or - sign (e.g., +2.5%)
 - [ ] Add empty state when no data is available
-- [ ] Improve error UI with retry button
-- [ ] Add smooth animations/transitions
-- [ ] Make the UI more visually appealing
-
+- [x] Improve error UI with retry button
+- [x] Add smooth animations/transitions
+- [x] Make the UI more visually appealing
+l
 #### Functionality Enhancements
 
-- [ ] Navigate to detail view when item is tapped
-- [ ] Display additional fields (volume, market cap, etc.)
-- [ ] Add search/filter functionality
-- [ ] Sort by price, change, or symbol
-- [ ] Implement WebSocket for real-time updates
+- [x] Navigate to detail view when item is tapped
+- [x] Display additional fields (volume, market cap, etc.)
+- [x] Add search/filter functionality
+- [x] Sort by price, change, or symbol
+- [x] Implement WebSocket for real-time updates
 
 #### Code Quality Enhancements
 
-- [ ] Add comprehensive error handling
+- [x] Add comprehensive error handling
 - [ ] Implement proper error types/classes
-- [ ] Add input validation
-- [ ] Optimize list rendering (use `ListView.builder` with proper itemExtent)
-- [ ] Add code comments where helpful
-- [ ] Implement caching for offline support
+- [x] Add input validation
+- [x] Optimize list rendering (use `ListView.builder` with proper itemExtent)
+- [x] Add code comments where helpful
+- [x] Implement caching for offline support
 
 #### Advanced Features
 
-- [ ] Add unit tests
-- [ ] Implement proper error recovery
+- [x] Add unit tests
+- [x] Implement proper error recovery
 - [ ] Add analytics tracking
-- [ ] Implement dark mode support
+- [x] Implement dark mode support
 
 ## Technical Constraints
 

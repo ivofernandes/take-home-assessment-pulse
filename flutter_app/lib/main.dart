@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:provider/provider.dart';
 import 'screens/home_screen.dart';
 import 'providers/market_data_provider.dart';
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(const PulseNowApp());
 }
 
@@ -20,6 +22,11 @@ class PulseNowApp extends StatelessWidget {
           primarySwatch: Colors.blue,
           useMaterial3: true,
         ),
+        darkTheme: ThemeData(
+          brightness: Brightness.dark,
+          useMaterial3: true,
+        ),
+        themeMode: ThemeMode.system,
         home: const HomeScreen(),
         debugShowCheckedModeBanner: false,
       ),
